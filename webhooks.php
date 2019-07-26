@@ -26,32 +26,36 @@ if (!is_null($events['events'])) {
 			// $a = 'How are you?';
 			// $a = 'How are you?';
 			$search = 'สวัสดี';
+
 			if(preg_match("/สวัสดี/i", $userMessage)) {
-				$text = "สวัสดีครับมีอะไรให้ช่วยมั๊ยครับ";
-			} else if (preg_match("/มี/i", $userMessage)) {
+				$text = "ดีจ้าาา";
+			} 
+			else if (preg_match("/มี/i", $userMessage)) {
 				$text = "มีอะไร";
-			} else if (preg_match("/รัก/i", $userMessage)) {
-				$text = "ความรักเป็นสิ่งสวยงาม";
-			} else if (preg_match("/นอน/i", $userMessage)) {
-				$text = "มักนอนคักบ่";
-			} else if (preg_match("/คัก/i", $userMessage)) {
-				$text = "เสาร์ อาทิตย์นี้กะนอนเด้อ ตื่นมาเทื่อเดียววันจันทร์";
-			} else if (preg_match("/บ้า/i", $userMessage)) {
-				$text = "เหานั่นแหละบ้า";
-			} else if (preg_match("/หวาน/i", $userMessage)) {
-				$text = "คนขี้เกียจตื่น ใช่หรือไม่";
-			} else if ("ใช่" == $userMessage) {
-				$text = "คักแหน่";
-			} else if ("ไม่ใช่" == $userMessage) {
-				$text = "อย่ามาตั๋ว";
-			} else if (preg_match("/กิน/i", $userMessage)) {
-				$text = "หิวแล้วติ";
-			} else if (preg_match("/หิว/i", $userMessage)) {
-				$text = "กินไรดี";
-			} else if (preg_match("/ไม่รู้/i", $userMessage) || preg_match("/บ่รู้/i", $userMessage)) {
-				$text = "ก๋วยเตี๋ยว";
-			} else {
-				$text = "เบิดคำสิเว้า";
+			}
+			else if (preg_match("/เครียด/i", $userMessage)) {
+				$text = "โอ๋เอ๋นะ";
+			}
+			else if (preg_match("/เหนื่อย/i", $userMessage)) {
+				$text = "มันเป็นยังไงไหนเล่า";
+			}
+			else if (preg_match("/หิว/i", $userMessage)) {
+				$text = "หาแดก";
+			}
+			else if (preg_match("/เหงา/i", $userMessage)) {
+				$text = "ไม่เหงาน๊า เราอยู่ตรงนี้";
+			}
+			else if (preg_match("/ท้อ/i", $userMessage)) {
+				$text = "ให้กำลังใจตัวเองเยอะๆนะ";
+			}
+			else if ("ฝ้าย" == $userMessage) {
+				$text = "นางแบบของน้องไม้หอม";
+			}
+			else if ("แอม" == $userMessage) {
+				$text = "คิดถึง คนๆนี้จัง";
+			}
+			else {
+				$text = "";
 			} 
 			// if (strpos($userMessage, 'สวัสดี') || $userMessage == 'สวัสดี') {
 			// 	$text = "สวัสดีครับมีอะไรให้ช่วยมั๊ยครับ";

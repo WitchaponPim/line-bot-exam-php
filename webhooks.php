@@ -55,7 +55,7 @@ if (!is_null($events['events'])) {
 				$text = "คิดถึง คนๆนี้จัง";
 			}
 			else {
-				$text = "";
+				$text = "เบิดคำสิเว้า";
 			} 
 			// if (strpos($userMessage, 'สวัสดี') || $userMessage == 'สวัสดี') {
 			// 	$text = "สวัสดีครับมีอะไรให้ช่วยมั๊ยครับ";
